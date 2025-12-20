@@ -116,7 +116,7 @@
 
 <h3>Illustration of Cross-Platform Development</h3>
 <p>The diagram below shows how a single codebase can be used across multiple platforms:</p>
-<img src="https://raw.githubusercontent.com/shamodhas-ijse-teaching/image-hosting/main/images/mobile_app_architecture.png" 
+<img src="https://raw.githubusercontent.com/shamodhas-ijse-teaching/file-hosting/main/images/mobile_app_architecture.png" 
      alt="Cross-Platform Mobile Development Diagram" 
      style="width:70%; display:block; margin:auto; border:1px solid #ccc; padding:10px;" />
 
@@ -138,6 +138,12 @@
 </ul>
 <p>More details and setup: <a href="https://reactnative.dev/docs/environment-setup" target="_blank">Official React Native CLI Guide</a></p>
 
+<p>💻 Additional setup guides:</p>
+<ul>
+<li><a href="https://github.com/shamodhas-ijse-teaching/file-hosting/blob/main/documents/Setup_Computer.md" target="_blank">Setup Computer for React Native CLI</a></li>
+<li><a href="https://github.com/shamodhas-ijse-teaching/file-hosting/blob/main/documents/Setup_CLI_Project.md" target="_blank">Setup React Native CLI Project</a></li>
+</ul>
+
 <h3>B. Expo Framework</h3>
 <p>Expo is a framework on top of React Native that simplifies development:</p>
 <ul>
@@ -150,14 +156,14 @@
 
 <!-- Expo Architecture Diagram -->
 <h4>Expo Architecture</h4>
-<img src="https://raw.githubusercontent.com/shamodhas-ijse-teaching/image-hosting/main/images/expo_architecture.png" 
+<img src="https://raw.githubusercontent.com/shamodhas-ijse-teaching/file-hosting/main/images/expo_architecture.png" 
      alt="Expo Architecture Diagram" 
      style="width:70%; display:block; margin:auto; border:1px solid #ccc; padding:10px;" />
 <p><b>Explanation:</b> This diagram shows the internal architecture of Expo, including the framework, APIs, and development tools.</p>
 
 <!-- Real-World Example Diagram -->
 <h4>Expo Real-World Example</h4>
-<img src="https://raw.githubusercontent.com/shamodhas-ijse-teaching/image-hosting/main/images/expo_real_world_example.png" 
+<img src="https://raw.githubusercontent.com/shamodhas-ijse-teaching/file-hosting/main/images/expo_real_world_example.png" 
      alt="Expo Real-World Example Diagram" 
      style="width:70%; display:block; margin:auto; border:1px solid #ccc; padding:10px;" />
 <p><b>Explanation:</b> This diagram illustrates a real-world scenario where a React Native / Expo app interacts with backend APIs, cloud services, and device features (Camera, GPS, Notifications) to deliver a full mobile experience.</p>
