@@ -67,7 +67,37 @@
 
 <hr/>
 
-<h2>6. Cross-Platform Mobile Development</h2>
+<h2>6. Native Mobile Development</h2>
+<p>Native mobile development involves creating applications specifically for a single platform using the platform's official language and tools.</p>
+<ul>
+<li><b>Android Native:</b> Java or Kotlin using Android Studio and Android SDK</li>
+<li><b>iOS Native:</b> Swift or Objective-C using Xcode and iOS SDK</li>
+</ul>
+<h3>Advantages:</h3>
+<ul>
+<li>Full access to device hardware (Camera, Sensors, GPS)</li>
+<li>High performance and speed</li>
+<li>Better platform-specific UI/UX</li>
+<li>Official support from platform vendors</li>
+</ul>
+
+<h3>Disadvantages:</h3>
+<ul>
+<li>Separate codebase for each platform → Higher maintenance</li>
+<li>Longer development time</li>
+<li>Requires knowledge of platform-specific languages</li>
+</ul>
+
+<p>Native development is preferred when:</p>
+<ul>
+<li>High performance is required (gaming, AR/VR apps)</li>
+<li>Full access to hardware features is critical</li>
+<li>Platform-specific UI/UX is needed</li>
+</ul>
+
+<hr/>
+
+<h2>7. Cross-Platform Mobile Development</h2>
 <p>Cross-platform development allows a single codebase to run on multiple operating systems:</p>
 <ul>
 <li>Faster development and deployment</li>
@@ -84,7 +114,7 @@
 
 <hr/>
 
-<h2>7. React Native Development Approaches</h2>
+<h2>8. React Native Development Approaches</h2>
 
 <h3>A. React Native CLI</h3>
 <p>The <b>React Native CLI</b> provides a full environment for building native apps:</p>
@@ -108,7 +138,7 @@
 
 <hr/>
 
-<h2>8. Navigation & Routing with Expo Router</h2>
+<h2>9. Navigation & Routing with Expo Router</h2>
 <p>File-based routing similar to Next.js:</p>
 <ul>
 <li>All routes inside <b>app/</b> folder</li>
@@ -147,91 +177,3 @@ app/test/sample.tsx → /test/sample
 </ul>
 
 <p><b>End of Day 1</b></p>
-
-<hr/>
-
-<h1>📗 Day 2: Project Setup & Development Workflow</h1>
-
-<h2>1. Initial Project Setup</h2>
-<ul>
-<li><b>Project Folder:</b> task-manager-app</li>
-<li><b>Application Name:</b> TaskHub</li>
-<li>Ensure Node.js >=18 and npm/yarn are installed</li>
-<li>Run <code>npx expo init task-manager-app</code> for Expo setup</li>
-</ul>
-
-<hr/>
-
-<h2>2. Styling with NativeWind</h2>
-<p>NativeWind enables Tailwind CSS syntax in React Native:</p>
-<ul>
-<li>Rapid UI development</li>
-<li>Reusable and consistent components</li>
-<li>Cleaner JSX/TSX code</li>
-</ul>
-
-<hr/>
-
-<h2>3. Running the Expo Project</h2>
-<table border="1" cellpadding="6">
-<tr><th>Command</th><th>Description</th></tr>
-<tr><td>npm start</td><td>Starts development server</td></tr>
-<tr><td>npx expo start</td><td>Launches Expo server</td></tr>
-<tr><td>npx expo start -c</td><td>Clears cache and restarts</td></tr>
-</table>
-<p><b>.expo</b> folder stores cache files. Use <b>-c</b> to fix UI issues.</p>
-
-<hr/>
-
-<h2>4. Recommended Project Structure</h2>
-<pre>
-app/
- ├── index.tsx
- ├── _layout.tsx
- ├── (auth)/
- │    ├── login.tsx
- │    ├── register.tsx
- │    └── _layout.tsx
- ├── (dashboard)/
- │    ├── home.tsx
- │    ├── profile.tsx
- │    ├── news.tsx
- │    ├── tasks.tsx
- │    └── _layout.tsx
-</pre>
-
-<hr/>
-
-<h2>5. Installing Expo-Compatible Libraries</h2>
-<pre>
-npm install @expo/vector-icons
-npx expo install @expo/vector-icons
-</pre>
-<p>Use <b>expo install</b> to ensure compatibility with the current Expo SDK.</p>
-
-<hr/>
-
-<h2>6. AMD / Final Year Project Requirements</h2>
-<h3>Mandatory Features</h3>
-<ul>
-<li>Firebase Authentication (Login/Register)</li>
-<li>CRUD operations for tasks</li>
-<li>Proper navigation (file-based + nested)</li>
-<li>User-friendly responsive UI</li>
-</ul>
-
-<h3>Submission</h3>
-<ul>
-<li>Git commit history</li>
-<li>Demo video / screen recording</li>
-<li>APK build file</li>
-</ul>
-
-<h3>Bonus Features</h3>
-<ul>
-<li>API integration</li>
-<li>Advanced Firebase features</li>
-<li>Camera, Sensors, Media access via native modules</li>
-</ul>
-
-<p><b>End of Day 2</b></p>
