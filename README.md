@@ -148,11 +148,20 @@
 <li>Recommended for academic and prototype projects</li>
 </ul>
 
-<img src="https://raw.githubusercontent.com/shamodhas-ijse-teaching/image-hosting/main/images/react_native_expo.png" 
-     alt="Expo Documentation Overview" 
+<!-- Diagram 1: Cross-Platform Overview -->
+<h4>1. Cross-Platform Development Overview</h4>
+<img src="https://raw.githubusercontent.com/shamodhas-ijse-teaching/image-hosting/main/images/expo_architecture.png" 
+     alt="Cross-Platform Mobile Development Diagram" 
      style="width:70%; display:block; margin:auto; border:1px solid #ccc; padding:10px;" />
+<p><b>Explanation:</b> A single codebase is written using a cross-platform framework (React Native, Flutter, Xamarin, Ionic) and deployed to both Android and iOS platforms.</p>
 
-<p><b>Explanation:</b> This diagram shows the key features and structure of the Expo framework, including built-in APIs, development tools, and live reloading.</p>
+<!-- Diagram 2: Real-World Scenario -->
+<h4>2. Real-World Mobile App Scenario</h4>
+<img src="https://raw.githubusercontent.com/shamodhas-ijse-teaching/image-hosting/main/images/expo_real_world_example.png" 
+     alt="Expo Real-World Scenario Diagram" 
+     style="width:70%; display:block; margin:auto; border:1px solid #ccc; padding:10px;" />
+<p><b>Explanation:</b> This diagram illustrates a real-world scenario where a React Native / Expo app communicates with backend APIs, cloud services, and device features (Camera, GPS, Notifications) to provide a complete mobile experience.</p>
+
 
 <hr/>
 
