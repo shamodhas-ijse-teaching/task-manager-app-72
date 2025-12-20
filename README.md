@@ -1,3 +1,4 @@
+
 <h1 align="center">Advanced Mobile Application Development (AMD) – ITS2127</h1>
 <p align="center">React Native with Expo – Detailed Lecture Notes</p>
 
@@ -214,15 +215,11 @@ app/test/sample.tsx → /test/sample
   <li>Used for Stack / Tab navigation</li>
 </ul>
 
-<h3>Programmatic Navigation & Passing Data</h3>
-<ul>
-  <li>Triggered using buttons or events (login, logout, task creation)</li>
-  <li>Data passed via route parameters (Task ID, User ID, Category)</li>
-  <li>Dynamic route example: <code>/tasks/[id].tsx</code></li>
-</ul>
-
+<p><b>End of Day 1</b></p>
 
 <hr/>
+
+<!-- ===================== DAY 2 ===================== -->
 
 <h1>📗 Day 2: Project Setup & Development Workflow</h1>
 
@@ -253,15 +250,113 @@ app/test/sample.tsx → /test/sample
 <tr><td>npx expo start -c</td><td>Clear cache & restart server</td></tr>
 </table>
 
-<p><b>Note:</b> The <code>.expo</code> folder stores cache files. Use <code>-c</code> when styles or components do not update correctly.</p>
+<p>
+<b>Note:</b> The <code>.expo</code> folder stores cache files.  
+Use <code>-c</code> when styles or components do not update correctly.
+</p>
 
 <hr/>
 
 <h2>2.4 Implementing Navigators</h2>
+<p>
+Navigation is a core part of mobile applications. In React Native with Expo Router, 
+navigation is handled using layouts and file-based routing.
+</p>
+
+<h3>A. Stack Navigation (Sequential Flow)</h3>
+<p>
+Stack navigation is used when screens follow a step-by-step or hierarchical flow.
+</p>
 <ul>
-  <li>Stack Navigation: Sequential flow (Login → Register → Dashboard)</li>
-  <li>Tab Navigation: Main sections (Home, Tasks, Profile)</li>
+  <li>Login → Register → Dashboard</li>
+  <li>Task List → Task Details → Edit Task</li>
 </ul>
+
+<p><b>Characteristics:</b></p>
+<ul>
+  <li>New screens are pushed on top of the stack</li>
+  <li>Back navigation is automatic</li>
+  <li>Commonly used for authentication flows</li>
+</ul>
+
+<p><b>Example Folder Structure:</b></p>
+<pre>
+app/
+ ├── _layout.tsx      ← Stack layout
+ ├── index.tsx
+ ├── details.tsx
+</pre>
+
+<hr/>
+
+<h3>B. Tab Navigation (Main Sections)</h3>
+<p>
+Tab navigation is used for the main sections of an application that users frequently switch between.
+</p>
+
+<ul>
+  <li>Home</li>
+  <li>Tasks</li>
+  <li>Profile</li>
+</ul>
+
+<p><b>Characteristics:</b></p>
+<ul>
+  <li>Tabs are always visible</li>
+  <li>Each tab maintains its own screen state</li>
+  <li>Improves user experience in dashboard-based apps</li>
+</ul>
+
+<p><b>Example Folder Structure:</b></p>
+<pre>
+app/
+ ├── (dashboard)/
+ │    ├── _layout.tsx   ← Tab layout
+ │    ├── home.tsx
+ │    ├── tasks.tsx
+ │    └── profile.tsx
+</pre>
+
+<hr/>
+
+<h2>2.5 Programmatic Navigation & Passing Data</h2>
+<p>
+Programmatic navigation allows moving between screens based on user actions
+(button clicks, form submission, authentication success).
+</p>
+
+<h3>Programmatic Navigation</h3>
+<ul>
+  <li>Triggered using buttons or events</li>
+  <li>Used after login, logout, or task creation</li>
+</ul>
+
+<p><b>Conceptual Example:</b></p>
+<ul>
+  <li>User logs in → Navigate to dashboard</li>
+  <li>User selects a task → Navigate to task details screen</li>
+</ul>
+
+<h3>Passing Data Between Screens</h3>
+<p>
+Data can be passed using route parameters.
+</p>
+
+<ul>
+  <li>Task ID</li>
+  <li>User ID</li>
+  <li>Category or status</li>
+</ul>
+
+<p><b>Route Example:</b></p>
+<pre>
+/tasks/123
+</pre>
+
+<p>
+Here, <code>123</code> represents a dynamic parameter (task ID) that can be used
+to fetch and display task-specific data.
+</p>
 
 <hr/>
 
@@ -287,7 +382,10 @@ app/
 <pre>
 npx expo install @expo/vector-icons
 </pre>
-<p>Using <code>expo install</code> ensures library compatibility with the current Expo SDK.</p>
+
+<p>
+Using <code>expo install</code> ensures library compatibility with the current Expo SDK.
+</p>
 
 <hr/>
 
