@@ -24,7 +24,7 @@ They can be categorized as follows:
 <table border="1" cellpadding="6">
 <tr><th>Component</th><th>Description</th></tr>
 <tr><td>Device</td><td>Physical hardware such as PC, smartphone, or tablet</td></tr>
-<tr><td>Operating System (OS)</td><td>Manages hardware and provides runtime environment</td></tr>
+<tr><td>Operating System</td><td>Manages hardware and provides runtime environment</td></tr>
 <tr><td>Applications</td><td>Software programs used by users</td></tr>
 </table>
 
@@ -79,7 +79,7 @@ required to develop applications for a specific platform.
 
 <table border="1" cellpadding="6">
 <tr><th>Platform</th><th>SDK</th></tr>
-<tr><td>Java</td><td>JDK (Java Development Kit)</td></tr>
+<tr><td>Java</td><td>JDK</td></tr>
 <tr><td>Android</td><td>Android SDK (Android Studio)</td></tr>
 <tr><td>iOS</td><td>iOS SDK (Xcode – macOS only)</td></tr>
 </table>
@@ -100,32 +100,31 @@ its official tools and programming languages.
 <h3>Advantages</h3>
 <ul>
   <li>Maximum performance</li>
-  <li>Full access to device hardware</li>
+  <li>Full hardware access</li>
   <li>Best platform-specific UI/UX</li>
 </ul>
 
 <h3>Disadvantages</h3>
 <ul>
   <li>Separate codebase per platform</li>
-  <li>Higher development and maintenance cost</li>
-  <li>Requires platform-specific expertise</li>
+  <li>Higher development cost</li>
+  <li>Requires multiple skill sets</li>
 </ul>
 
 <hr/>
 
 <h2>7. Cross-Platform Mobile Development</h2>
 <p>
-Cross-platform development allows a single codebase to run on multiple platforms
-such as Android and iOS.
+Cross-platform development allows a single codebase to run on multiple platforms.
 </p>
 
 <ul>
-  <li>Faster development cycle</li>
+  <li>Faster development</li>
   <li>Lower maintenance cost</li>
-  <li>Consistent UI/UX across platforms</li>
+  <li>Consistent UI/UX</li>
 </ul>
 
-<h3>Popular Cross-Platform Frameworks</h3>
+<h3>Popular Frameworks</h3>
 <ul>
   <li>React Native</li>
   <li>Flutter</li>
@@ -134,7 +133,6 @@ such as Android and iOS.
 </ul>
 
 <img src="https://raw.githubusercontent.com/shamodhas-ijse-teaching/file-hosting/main/images/mobile_app_architecture.png"
-     alt="Cross Platform Architecture"
      style="width:70%; display:block; margin:auto; border:1px solid #ccc; padding:10px;" />
 
 <hr/>
@@ -143,19 +141,17 @@ such as Android and iOS.
 
 <h3>A. React Native CLI</h3>
 <ul>
-  <li>Full React Native environment</li>
-  <li>Manual setup of Android Studio & Xcode</li>
-  <li>Direct access to native modules</li>
-  <li>Best suited for large-scale enterprise applications</li>
+  <li>Manual environment setup</li>
+  <li>Direct native module access</li>
+  <li>Best for enterprise-level apps</li>
 </ul>
 
 <h3>B. Expo Framework</h3>
 <ul>
-  <li>React Native framework + workflow</li>
-  <li>Minimal environment setup</li>
-  <li>Fast development with Expo Go</li>
-  <li>Built-in APIs (Camera, Media, Sensors, Notifications)</li>
-  <li>Highly suitable for academic and prototype projects</li>
+  <li>Minimal setup</li>
+  <li>Fast development cycle</li>
+  <li>Built-in APIs</li>
+  <li>Ideal for academic projects</li>
 </ul>
 
 <hr/>
@@ -164,39 +160,32 @@ such as Android and iOS.
 
 <h3>File-Based Routing</h3>
 <ul>
-  <li>Routing is based on folder and file structure</li>
-  <li>Main entry file: <code>app/index.tsx</code></li>
-  <li>Supports nested, grouped, and dynamic routes</li>
+  <li>Routes defined using folder structure</li>
+  <li>Supports nested and dynamic routes</li>
 </ul>
-
-<h3>Examples</h3>
-<pre>
-/           → app/index.tsx
-/home       → app/home.tsx
-/[id]       → app/[id].tsx
-/test       → app/test/index.tsx
-/test/123   → app/test/[id].tsx
-/login      → app/(auth)/login.tsx
-</pre>
 
 <h3>Navigation Types</h3>
 <ul>
-  <li><b>Stack Navigation:</b> Sequential flows (Login → Dashboard)</li>
-  <li><b>Tab Navigation:</b> Main sections (Home, Tasks, Profile)</li>
+  <li><b>Stack Navigation:</b> Sequential screen flow</li>
+  <li><b>Tab Navigation:</b> Main application sections</li>
 </ul>
 
 <h3>Programmatic Navigation & Data Passing</h3>
 <p>
-Navigation can be triggered by logic such as authentication success
-or user interaction. Data is passed using route parameters.
+Navigation can be triggered based on logic such as login success or user actions.
 </p>
+
+<ul>
+  <li>Navigate after authentication</li>
+  <li>Pass IDs or parameters via routes</li>
+</ul>
 
 <pre>
 /tasks/123
 </pre>
 
 <p>
-Here, <code>123</code> represents a dynamic task ID.
+Here, <code>123</code> represents a dynamic parameter used to fetch task data.
 </p>
 
 <p><b>End of Day 1</b></p>
@@ -209,8 +198,7 @@ Here, <code>123</code> represents a dynamic task ID.
 
 <h2>2.1 Initial Project Setup</h2>
 <ul>
-  <li><b>Project Folder:</b> task-manager-app</li>
-  <li><b>Application Name:</b> TaskHub</li>
+  <li>Project Name: <b>TaskHub</b></li>
   <li>Node.js version ≥ 18</li>
   <li>Create project using <code>npx expo init</code></li>
 </ul>
@@ -219,9 +207,9 @@ Here, <code>123</code> represents a dynamic task ID.
 
 <h2>2.2 Styling with NativeWind</h2>
 <ul>
-  <li>Tailwind CSS for React Native</li>
-  <li>Utility-first styling approach</li>
-  <li>Improves UI consistency and development speed</li>
+  <li>Utility-first styling</li>
+  <li>Improved consistency</li>
+  <li>Reduced custom stylesheet code</li>
 </ul>
 
 <hr/>
@@ -229,70 +217,49 @@ Here, <code>123</code> represents a dynamic task ID.
 <h2>2.3 Running the Project</h2>
 <table border="1" cellpadding="6">
 <tr><th>Command</th><th>Purpose</th></tr>
-<tr><td>npm start</td><td>Start development server</td></tr>
-<tr><td>npx expo start</td><td>Launch Expo development tools</td></tr>
-<tr><td>npx expo start -c</td><td>Clear Metro bundler cache</td></tr>
+<tr><td>npx expo start</td><td>Start development server</td></tr>
+<tr><td>npx expo start -c</td><td>Clear cache</td></tr>
 </table>
-
-<p>
-The <code>.expo</code> folder contains cached files.
-Use <code>-c</code> if changes are not reflected correctly.
-</p>
 
 <hr/>
 
-<h2>2.4 Recommended Project Structure</h2>
+<h2>2.4 Implementing Navigators</h2>
+
+<h3>Stack Navigator</h3>
+<ul>
+  <li>Authentication flows</li>
+  <li>Detail screens</li>
+</ul>
+
+<h3>Tab Navigator</h3>
+<ul>
+  <li>Main dashboard</li>
+  <li>Persistent navigation</li>
+</ul>
+
+<pre>
+app/
+ ├── (auth)/
+ ├── (dashboard)/
+</pre>
+
+<hr/>
+
+<h2>2.5 Recommended Project Structure</h2>
 <pre>
 app/
  ├── index.tsx
  ├── _layout.tsx
  ├── (auth)/
- │    ├── login.tsx
- │    ├── register.tsx
- │    └── _layout.tsx
- ├── (dashboard)/
- │    ├── home.tsx
- │    ├── tasks.tsx
- │    ├── profile.tsx
- │    └── _layout.tsx
+ └── (dashboard)/
 </pre>
 
 <hr/>
 
-<h2>2.5 Installing Expo-Compatible Libraries</h2>
+<h2>2.6 Installing Expo Libraries</h2>
 <pre>
 npx expo install @expo/vector-icons
 </pre>
-
-<p>
-Using <code>expo install</code> ensures version compatibility with the current Expo SDK.
-</p>
-
-<hr/>
-
-<h2>2.6 Expo – Official Documentation</h2>
-<ul>
-  <li>
-    <a href="https://docs.expo.dev/" target="_blank">
-      Expo Documentation (Official)
-    </a>
-  </li>
-  <li>
-    <a href="https://docs.expo.dev/router/introduction/" target="_blank">
-      Expo Router – File Based Routing
-    </a>
-  </li>
-  <li>
-    <a href="https://docs.expo.dev/workflow/expo-go/" target="_blank">
-      Expo Go – Run Apps on Real Devices
-    </a>
-  </li>
-  <li>
-    <a href="https://docs.expo.dev/versions/latest/sdk/" target="_blank">
-      Expo SDK API Reference
-    </a>
-  </li>
-</ul>
 
 <hr/>
 
@@ -300,24 +267,16 @@ Using <code>expo install</code> ensures version compatibility with the current E
 
 <h3>Mandatory</h3>
 <ul>
-  <li>Firebase Authentication (Login & Register)</li>
+  <li>Firebase Authentication</li>
   <li>CRUD operations</li>
-  <li>Proper navigation (Stack + Tabs)</li>
-  <li>User-friendly UI</li>
+  <li>Proper navigation</li>
 </ul>
 
 <h3>Submission</h3>
 <ul>
-  <li>Git repository with commit history</li>
+  <li>Git repository</li>
   <li>Demo video</li>
-  <li>APK / build output</li>
-</ul>
-
-<h3>Bonus</h3>
-<ul>
-  <li>API integration</li>
-  <li>Advanced Firebase features</li>
-  <li>Native modules (Camera, Media, Sensors)</li>
+  <li>APK</li>
 </ul>
 
 <p><b>End of Day 2</b></p>
