@@ -148,6 +148,12 @@
 <li>Recommended for academic and prototype projects</li>
 </ul>
 
+<img src="https://raw.githubusercontent.com/shamodhas-ijse-teaching/image-hosting/main/images/expo_documentation.png" 
+     alt="Expo Documentation Overview" 
+     style="width:70%; display:block; margin:auto; border:1px solid #ccc; padding:10px;" />
+
+<p><b>Explanation:</b> This diagram shows the key features and structure of the Expo framework, including built-in APIs, development tools, and live reloading.</p>
+
 <hr/>
 
 <h2>9. Navigation & Routing with Expo Router</h2>
