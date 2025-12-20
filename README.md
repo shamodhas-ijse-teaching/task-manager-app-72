@@ -116,7 +116,9 @@
 
 <h3>Illustration of Cross-Platform Development</h3>
 <p>The diagram below shows how a single codebase can be used across multiple platforms:</p>
-<img src="path/to/your/image.png" alt="Cross-Platform Mobile Development Diagram" style="width:70%; display:block; margin:auto; border:1px solid #ccc; padding:10px;"/>
+<img src="https://raw.githubusercontent.com/shamodhas-ijse-teaching/image-hosting/main/images/mobile_app_architecture.png" 
+     alt="Cross-Platform Mobile Development Diagram" 
+     style="width:70%; display:block; margin:auto; border:1px solid #ccc; padding:10px;" />
 
 <p><b>Explanation:</b> A single codebase is written using a cross-platform framework (React Native, Flutter, Xamarin, Ionic) and deployed to both Android and iOS platforms. This allows developers to save time, ensure consistency, and maintain a unified user experience.</p>
 
