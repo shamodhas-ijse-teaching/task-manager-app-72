@@ -148,7 +148,7 @@
 <li>Recommended for academic and prototype projects</li>
 </ul>
 
-<img src="https://raw.githubusercontent.com/shamodhas-ijse-teaching/image-hosting/main/images/expo_documentation.png" 
+<img src="https://raw.githubusercontent.com/shamodhas-ijse-teaching/image-hosting/main/images/react_native_expo.png" 
      alt="Expo Documentation Overview" 
      style="width:70%; display:block; margin:auto; border:1px solid #ccc; padding:10px;" />
 
