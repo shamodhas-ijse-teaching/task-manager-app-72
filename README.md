@@ -136,7 +136,6 @@
 <li>Ideal for complex or large-scale apps</li>
 <li>Requires knowledge of native development (Java/Kotlin for Android, Swift/Obj-C for iOS)</li>
 </ul>
-<p>More details and setup: <a href="https://reactnative.dev/docs/environment-setup" target="_blank">Official React Native CLI Guide</a></p>
 
 <p>💻 Additional setup guides:</p>
 <ul>
