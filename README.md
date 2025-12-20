@@ -140,7 +140,7 @@
 <p>💻 Additional setup guides:</p>
 <ul>
 <li><a href="https://github.com/shamodhas-ijse-teaching/file-hosting/blob/main/documents/Setup_Computer.md" target="_blank">Setup Computer for React Native CLI</a></li>
-<li><a href="https://github.com/shamodhas-ijse-teaching/file-hosting/blob/main/documents/Setup_CLI_Project.md" target="_blank">Setup React Native CLI Project</a></li>
+<li><a href="https://github.com/shamodhas-ijse-teaching/react-native-cli-2025" target="_blank">Setup React Native CLI Project</a></li>
 </ul>
 
 <h3>B. Expo Framework</h3>
