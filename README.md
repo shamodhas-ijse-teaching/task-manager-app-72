@@ -218,8 +218,9 @@ app/test/sample.tsx → /test/sample
 <ul>
   <li>Triggered using buttons or events (login, logout, task creation)</li>
   <li>Data passed via route parameters (Task ID, User ID, Category)</li>
-  <li>Dynamic route example: <code>/tasks/123</code> → fetch task-specific data</li>
+  <li>Dynamic route example: <code>/tasks/[id].tsx</code></li>
 </ul>
+
 
 <hr/>
 
