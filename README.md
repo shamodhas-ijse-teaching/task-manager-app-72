@@ -264,7 +264,7 @@ Device → OS → Applications
 
 <h2>9. Navigation & Routing with Expo Router</h2>
 
-<p><b>Expo Router</b> is a file-based routing system for React Native, inspired by Next.js. It automatically generates routes based on the folder structure inside the <code>app/</code> directory. This approach simplifies navigation and keeps your project organized.</p>
+<p><b>Expo Router</b> is a <b>file-based routing</b> system for React Native, inspired by Next.js. It automatically generates routes based on the folder structure inside the <code>app/</code> directory. This approach simplifies navigation and keeps your project organized.</p>
 
 <ul>
   <li>File-based routing (similar to Next.js)</li>
@@ -326,15 +326,18 @@ app/[id].tsx   → /123, /profile, /product-45
 </pre>
 
 <p><b>Example:</b></p>
-<pre style="background-color:#f9f9f9; padding:10px; border-radius:5px;">
+<div style="background-color:#f9f9f9; padding:10px; border-radius:5px; overflow-x:auto;">
+<pre>
 import { Text } from 'react-native';
 import { useLocalSearchParams } from 'expo-router';
 
 export default function Page() {
   const params = useLocalSearchParams();
-  return &lt;Text&gt;Dynamic Page: {params.id}&lt;/Text&gt;;
+  return <Text>Dynamic Page: {params.id}</Text>;
 }
 </pre>
+</div>
+
 
 <hr>
 <h3>9.4 Nested Routes</h3>
