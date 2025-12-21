@@ -1,6 +1,6 @@
 
 <h1 align="center">Advanced Mobile Application Development (AMD) – ITS2127</h1>
-<p align="center">React Native with Expo – Detailed Lecture Notes</p>
+<p align="center">Detailed Lecture Notes</p>
 
 <hr/>
 
@@ -69,13 +69,27 @@ Device → OS → Applications
 <hr/>
 
 <h2>5. Software Development Kits (SDKs)</h2>
-<p>An SDK (Software Development Kit) is a collection of tools, libraries, and documentation used to develop applications for a specific platform.</p>
+<p>A <b>Software Development Kit (SDK)</b> is a set of <b>tools</b>, <b>libraries</b>, and <b>documentation</b> that developers use to create applications for a specific platform. SDKs provide essential resources for <b>building</b>, <b>testing</b>, and <b>deploying</b> applications efficiently.</p>
+
+<p>All SDKs are built around a strong <b>programming language foundation</b>, enabling developers to create <b>robust</b>, <b>scalable</b>, and <b>platform-specific applications</b>. They typically include <b>compilers</b>, <b>debuggers</b>, <b>APIs</b>, and <b>sample code</b> to simplify and accelerate the development process.</p>
 
 <table border="1" cellpadding="6">
-<tr><th>Technology</th><th>SDK</th></tr>
-<tr><td>Java</td><td>JDK</td></tr>
-<tr><td>Android</td><td>Android SDK (via Android Studio)</td></tr>
-<tr><td>iOS</td><td>iOS SDK (via Xcode – macOS only)</td></tr>
+  <tr>
+    <th>Technology</th>
+    <th>SDK</th>
+  </tr>
+  <tr>
+    <td>Java</td>
+    <td>JDK (Java Development Kit)</td>
+  </tr>
+  <tr>
+    <td>Android</td>
+    <td>Android SDK (via Android Studio)</td>
+  </tr>
+  <tr>
+    <td>iOS</td>
+    <td>iOS SDK (via Xcode – macOS only)</td>
+  </tr>
 </table>
 
 <hr/>
@@ -83,9 +97,13 @@ Device → OS → Applications
 <h2>6. Native Mobile Development</h2>
 <p>Native mobile development refers to building applications specifically for a single platform using its official programming language and tools.</p>
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/shamodhas-ijse-teaching/file-hosting/main/images/native_mobile_development.png" alt="Native Mobile Development Diagram" width="600">
+</p>
+
 <ul>
-  <li><b>Android Native:</b> Java or Kotlin using Android Studio and Android SDK</li>
-  <li><b>iOS Native:</b> Swift or Objective-C using Xcode and iOS SDK</li>
+  <li><b>Native Android:</b> Java or Kotlin using Android Studio and Android SDK</li>
+  <li><b>Native iOS:</b> Swift or Objective-C using Xcode and iOS SDK</li>
 </ul>
 
 <h3>Advantages</h3>
@@ -109,6 +127,7 @@ Device → OS → Applications
   <li>Deep hardware access is critical</li>
   <li>Strict platform-specific UI rules apply</li>
 </ul>
+
 
 <hr/>
 
