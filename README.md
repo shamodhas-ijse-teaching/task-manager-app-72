@@ -196,17 +196,42 @@ Native mobile development refers to building applications specifically for a sin
 
 <br>
 
-**Key Differences Between React Native CLI and Expo:**
+### **Key Differences: React Native CLI vs. Expo**
 
-| Feature        | React Native CLI                                | Expo                                                               |
-| :------------- | :---------------------------------------------- | :----------------------------------------------------------------- |
-| Setup          | Manual setup of Android Studio & Xcode          | Minimal setup, preconfigured environment                           |
-| Native Modules | Full access, can write custom native code       | Limited to built-in APIs; eject required for custom native modules |
-| Best Use Case  | Large, complex apps with high performance needs | Learning, prototypes, small to medium apps                         |
-| Ease of Use    | Requires knowledge of native languages          | Beginner-friendly, no native knowledge required                    |
+| Feature                    | React Native CLI                                                                                                                                                                           | Expo                                                                                                                                                                                        |
+| :------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Setup & Environment**    | **Complex & Manual.** You **must** install the **Android SDK** (typically via **Android Studio**) and the **iOS SDK** (via **Xcode** on macOS) before you can write a single line of code. | **Fast & Minimal.** No immediate need for Android Studio or Xcode. You can run the app instantly on your phone using the **Expo Go** app. (SDKs are only needed later if building locally). |
+| **Native Access**          | **Unrestricted.** You have direct access to native Android (`android/`) and iOS (`ios/`) folders. You can link any native library manually.                                                | **Streamlined.** Access to a massive library of pre-built native modules. For custom native code, you use "Config Plugins" or "Prebuild" (modern approach) instead of "ejecting."           |
+| **Best Use Case**          | Apps requiring deep system integration (e.g., specialized Bluetooth profiles, background threads) or when you need absolute control over the build process.                                | Ideal for **most** commercial apps, MVPs, and rapid development. Modern Expo (via EAS) handles large-scale apps effectively.                                                                |
+| **Development Experience** | Steep learning curve. You often need to debug build errors in Android Studio or Xcode.                                                                                                     | Beginner-friendly workflow. Most debugging happens in the browser or terminal; complex native build errors are abstracted away.                                                             |
 
-**Summary:** React Native CLI is like having the full toolbox — some call it the _bare-bones approach_. You can build anything, but you need some experience. Expo is like a ready-made toolkit — easier to start with and great for learning or quick projects. Choose the approach based on your project needs and experience level.
+---
 
+### **Important Concept: Cross-Platform vs. Native Build Tools**
+
+Students often ask: *"If React Native is cross-platform, why do I need to install specific Android and iOS tools?"*
+
+1.  **React Native is Cross-Platform (The Code):**
+    You write your logic once in JavaScript/TypeScript. This single codebase is capable of running on both Android and iOS.
+
+2.  **SDKs are the Build Tools (The Factory):**
+    Even though the code is shared, the **final application file** (APK for Android, IPA for iOS) must be built using the manufacturer's official tools.
+    * **Android Studio (Android SDK):** Is required to take your JavaScript code and compile it into an Android App.
+    * **Xcode (iOS SDK):** Is required to take that *same* JavaScript code and compile it into an iOS App.
+
+**In short:** The *development* requires platform-specific tools (SDKs) to do the heavy lifting of compiling, even though your *coding* is done in a cross-platform language.
+
+---
+
+### **Summary**
+
+**React Native CLI** is the "bare-bones" approach. It gives you full control but demands that you manually set up the **Android SDK (using Android Studio)** and **iOS SDK (using Xcode)**. It is powerful but requires you to manage the native build environment yourself.
+
+**Expo** is the "batteries-included" toolkit. It abstracts away the complex SDK setup, allowing you to start coding immediately. While it used to be just for beginners, modern Expo (with EAS) is powerful enough for most professional applications, only requiring the native SDKs if you decide to build the app locally on your own machine.
+
+### **Which one should you choose?**
+* Choose **Expo** if you want to start quickly and avoid configuration headaches.
+* Choose **CLI** if you are already comfortable with Android Studio/Xcode and need specific, low-level native control from day one.
 ---
 
 ## 1.9 Navigation & Routing with Expo Router
