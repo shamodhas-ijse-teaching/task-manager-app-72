@@ -5,7 +5,7 @@
 
 # 📘 Day 1: Foundations of Mobile Development
 
-## 1. Understanding Application Platforms
+## 1.1 Understanding Application Platforms
 
 Applications are software programs designed to run on different hardware platforms. They can be categorized as:
 
@@ -17,7 +17,7 @@ Each platform has its own development requirements, limitations, and frameworks.
 
 ---
 
-## 2. Relationship Between Device, OS, and Software
+## 1.2 Relationship Between Device, OS, and Software
 
 | Component             | Description                                           |
 | :-------------------- | :---------------------------------------------------- |
@@ -34,7 +34,7 @@ Applications depend on the OS in the same way abilities depend on life.
 
 ---
 
-## 3. Desktop and Mobile Operating Systems
+## 1.3 Desktop and Mobile Operating Systems
 
 ### Desktop OS
 
@@ -54,7 +54,7 @@ Applications depend on the OS in the same way abilities depend on life.
 
 ---
 
-## 4. Evolution of Devices and Capabilities
+## 1.4 Evolution of Devices and Capabilities
 
 | Device             | Main Capabilities                                   |
 | :----------------- | :-------------------------------------------------- |
@@ -64,7 +64,7 @@ Applications depend on the OS in the same way abilities depend on life.
 
 ---
 
-## 5. Software Development Kits (SDKs)
+## 1.5 Software Development Kits (SDKs)
 
 A **Software Development Kit (SDK)** is a set of **tools**, **libraries**, and **documentation** that developers use to create applications for a specific platform. SDKs provide essential resources for **building**, **testing**, and **deploying** applications efficiently.
 
@@ -78,7 +78,7 @@ All SDKs are built around a strong **programming language foundation**, enabling
 
 ---
 
-## 6. Native Mobile Development
+## 1.6 Native Mobile Development
 
 Native mobile development refers to building applications specifically for a single platform using its official programming language and tools.
 
@@ -114,7 +114,7 @@ Native mobile development refers to building applications specifically for a sin
 
 ---
 
-## 7. Cross-Platform Mobile Development
+## 1.7 Cross-Platform Mobile Development
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/shamodhas-ijse-teaching/file-hosting/main/images/mobile_app_architecture.png"
@@ -143,7 +143,7 @@ Native mobile development refers to building applications specifically for a sin
 
 ---
 
-## 8. React Native Development Approaches
+## 1.8 React Native Development Approaches
 
 ### A. React Native CLI
 
@@ -209,7 +209,7 @@ Native mobile development refers to building applications specifically for a sin
 
 ---
 
-## 9. Navigation & Routing with Expo Router
+## 1.9 Navigation & Routing with Expo Router
 
 **Expo Router** is a **file-based routing** system for React Native, inspired by Next.js. It automatically generates routes based on the folder structure inside the `app/` directory. This approach simplifies navigation and keeps your project organized.
 
@@ -220,7 +220,7 @@ Native mobile development refers to building applications specifically for a sin
 
 ---
 
-### 9.1 Key Files in Expo Router
+### 1.9.1 Key Files in Expo Router
 
 - **app/index.tsx** – **Application entry point**. This file corresponds to the root route `/` of your app.
 - **index.tsx** – Default route for a folder:
@@ -233,7 +233,7 @@ Native mobile development refers to building applications specifically for a sin
 
 ---
 
-### 9.2 Basic Routes
+### 1.9.2 Basic Routes
 
 Basic route mapping uses file names:
 
@@ -245,7 +245,7 @@ Basic route mapping uses file names:
 
 ---
 
-### 9.3 Dynamic Routes
+### 1.9.3 Dynamic Routes
 
 Use square brackets `[]` for routes with variables:
 
@@ -267,7 +267,7 @@ export default function Page() {
 
 ---
 
-### 9.4 Nested Routes
+### 1.9.4 Nested Routes
 
 **Nested folders define nested routes:**
 
@@ -279,7 +279,7 @@ app/test/profile/[id].tsx  → /test/profile/123
 
 ---
 
-### 9.5 Route Groups
+### 1.9.5 Route Groups
 
 **Use parentheses `()` to group routes logically without affecting URL paths:**
 
@@ -290,7 +290,7 @@ app/(auth)/register.tsx  → /register
 
 ---
 
-### 9.6 Layout Files
+### 1.9.6 Layout Files
 
 **Layouts wrap child pages with shared UI components:**
 
@@ -316,7 +316,7 @@ export default function AuthLayout({ children }) {
 
 ---
 
-### 9.7 Linking & Navigation
+### 1.9.7 Linking & Navigation
 
 **Navigate programmatically using the `useRouter` hook:**
 
@@ -331,7 +331,7 @@ router.back() // Go back
 
 ---
 
-### 9.8 Best Practices
+### 1.9.8 Best Practices
 
 - Use route groups to separate public/private pages
 - Keep layouts reusable to reduce duplication
@@ -340,7 +340,7 @@ router.back() // Go back
 
 ---
 
-### 9.9 Visual Overview
+### 1.9.9 Visual Overview
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/shamodhas-ijse-teaching/file-hosting/main/images/expo_router_structure.png" 
@@ -352,7 +352,7 @@ router.back() // Go back
 
 ---
 
-### 9.10 Summary
+### 1.9.10 Summary
 
 Expo Router simplifies navigation by mapping file/folder structures directly to routes. With **dynamic routes**, **nested routes**, **route groups**, and **layouts**, you can build scalable and maintainable navigation systems in React Native apps. Understanding key files like `index.tsx`, `_layout.tsx`, and `[param].tsx` is essential for effective routing.
 
@@ -391,7 +391,23 @@ Expo Router simplifies navigation by mapping file/folder structures directly to 
 
 ---
 
-## 2.4 Implementing Navigators
+## 2.4 Real-Time Updates & Caching
+
+### A. Fast Refresh (Instant Updates)
+* **What it does:** Instantly updates the app when you save code (`Ctrl + S`).
+* **Benefit:** It keeps your typed data (state) safe while updating the design.
+
+### B. Clearing Cache
+* **When to use:** If the app behaves strangely or styles don't update.
+* **Command:** Stop the server, then run either command:
+    ```bash
+    npx expo start -c
+    # OR
+    npx expo start --clear
+    ```
+---
+
+## 2.5 Implementing Navigators
 
 Navigation is a core part of mobile applications. In React Native with Expo Router, navigation is handled using layouts and file-based routing.
 
@@ -437,7 +453,7 @@ app/
  │    └── profile.tsx
  ```
 ---
-## 2.5 Sample Project Structure
+## 2.6 Sample Project Structure
 ```text
 app/
  ├── index.tsx
@@ -454,7 +470,7 @@ app/
  ```
 
 ---
-## 2.6 Installing Expo-Compatible Libraries
+## 2.7 Installing Expo-Compatible Libraries
 To use icons in your app, we use the **@expo/vector-icons** library. This package includes popular icon sets like **Ionicons**, **FontAwesome**, and **MaterialIcons** ready to use without extra configuration.
 
 **Installation:**
