@@ -1,4 +1,3 @@
-
 <h1 align="center">Advanced Mobile Application Development (AMD) – ITS2127</h1>
 <p align="center">Detailed Lecture Notes</p>
 
@@ -98,12 +97,16 @@ Device → OS → Applications
 <p>Native mobile development refers to building applications specifically for a single platform using its official programming language and tools.</p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/shamodhas-ijse-teaching/file-hosting/main/images/native_mobile_development.png" alt="Native Mobile Development Diagram" width="600">
+  <img src="https://raw.githubusercontent.com/shamodhas-ijse-teaching/file-hosting/main/images/native_mobile_development.png" 
+       alt="Native Mobile Development Diagram" 
+       style="width:100%; max-width:1200px; height:auto;">
+  <br>
+  <b>Figure: Native Mobile Development Architecture</b>
 </p>
 
 <ul>
-  <li><b>Native Android:</b> Java or Kotlin using Android Studio and Android SDK</li>
-  <li><b>Native iOS:</b> Swift or Objective-C using Xcode and iOS SDK</li>
+  <li><b>Native Android:</b> Java or Kotlin using <b>Android SDK</b> (via <b>Android Studio – Integrated Development Environment</b>)</li>
+  <li><b>Native iOS:</b> Swift or Objective-C using <b>iOS SDK</b> (via <b>Xcode – Integrated Development Environment</b>)</li>
 </ul>
 
 <h3>Advantages</h3>
@@ -128,43 +131,58 @@ Device → OS → Applications
   <li>Strict platform-specific UI rules apply</li>
 </ul>
 
-
 <hr/>
 
 <h2>7. Cross-Platform Mobile Development</h2>
-<p>Cross-platform development allows developers to write a single codebase that runs on multiple platforms such as Android and iOS.</p>
 
+<!-- Image at the top with figure title -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/shamodhas-ijse-teaching/file-hosting/main/images/mobile_app_architecture.png"
+       alt="Cross Platform Architecture"
+       style="width:50%; max-width:1200px; display:block; margin:auto; border:1px solid #ccc; padding:10px; box-shadow:0 4px 8px rgba(0,0,0,0.1);">
+  <br>
+  <b>Figure: Cross-Platform Mobile Development Architecture</b>
+</p>
+
+<p><b>Cross-platform mobile development</b> allows developers to write a <b>single codebase</b> that runs on multiple platforms, such as <b>Android</b> and <b>iOS</b>. This approach reduces development time and effort while ensuring consistent functionality across devices.</p>
+
+<h3>Advantages</h3>
 <ul>
-  <li>Faster development and deployment</li>
-  <li>Lower maintenance cost</li>
-  <li>Unified UI/UX across platforms</li>
+  <li><b>Faster development and deployment:</b> One codebase for multiple platforms accelerates release cycles.</li>
+  <li><b>Lower maintenance cost:</b> Updates and bug fixes are applied once for all platforms.</li>
+  <li><b>Unified UI/UX across platforms:</b> Ensures a consistent user experience on Android and iOS devices.</li>
 </ul>
 
 <h3>Popular Frameworks</h3>
 <ul>
-  <li>React Native (JavaScript / TypeScript)</li>
-  <li>Flutter (Dart)</li>
-  <li>Xamarin (C#)</li>
-  <li>Ionic (JavaScript / Angular)</li>
+  <li><b>React Native</b> (JavaScript / TypeScript)</li>
+  <li><b>Flutter</b> (Dart)</li>
+  <li><b>Xamarin</b> (C#)</li>
+  <li><b>Ionic</b> (JavaScript / Angular)</li>
 </ul>
 
-<h3>Cross-Platform Architecture</h3>
-<img src="https://raw.githubusercontent.com/shamodhas-ijse-teaching/file-hosting/main/images/mobile_app_architecture.png"
-     alt="Cross Platform Architecture"
-     style="width:70%; display:block; margin:auto; border:1px solid #ccc; padding:10px;" />
-
-<p><b>Explanation:</b> A single codebase is written using a cross-platform framework and deployed to both Android and iOS platforms.</p>
+<p><b>Explanation:</b> In cross-platform development, a <b>single codebase</b> is written using frameworks like <b>React Native</b>, <b>Flutter</b>, or <b>Xamarin</b> and deployed to both <b>Android</b> and <b>iOS</b>. This approach allows for <b>faster development</b>, <b>simpler maintenance</b>, and a <b>consistent user experience</b> across multiple devices.</p>
 
 <hr/>
-
 <h2>8. React Native Development Approaches</h2>
 
 <h3>A. React Native CLI</h3>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/shamodhas-ijse-teaching/file-hosting/main/images/react_native_cli.png"
+       alt="React Native CLI Architecture"
+       style="width:50%; max-width:800px; border:1px solid #ccc; padding:10px; box-shadow:0 4px 8px rgba(0,0,0,0.1);">
+  <br>
+  <b>Figure: React Native CLI Architecture Overview</b>
+</p>
+
+<p><b>React Native CLI</b> is the “full control” approach to building React Native apps. Some call it the <i>bare-bones approach</i> — you have access to everything and can tweak the native code, optimize performance, and implement advanced features. Perfect for big apps or when you need something highly customized.</p>
+
 <ul>
-  <li>Manual setup of Android Studio & Xcode</li>
-  <li>Direct access to native modules</li>
-  <li>Suitable for large-scale and complex apps</li>
-  <li>Requires native language knowledge</li>
+  <li><b>Manual setup:</b> Requires installing and configuring <b>Android Studio</b> and <b>Xcode</b>.</li>
+  <li><b>Direct access to native modules:</b> Write custom Android or iOS code whenever needed.</li>
+  <li><b>Great for complex apps:</b> Ideal for apps requiring high performance or advanced features.</li>
+  <li><b>Requires some native knowledge:</b> Java/Kotlin for Android, Swift/Objective-C for iOS.</li>
 </ul>
 
 <p><b>Setup Resources:</b></p>
@@ -182,57 +200,215 @@ Device → OS → Applications
 </ul>
 
 <h3>B. Expo Framework</h3>
+<p><b>Expo</b> is like a ready-to-go toolkit built on top of React Native. You don’t need to configure Android Studio or Xcode at first — Expo handles the setup and provides handy APIs for camera, notifications, sensors, and more. Great for learning, prototypes, or small to medium apps.</p>
+
 <ul>
-  <li>Minimal setup</li>
-  <li>Preconfigured Metro bundler</li>
-  <li>Fast refresh & hot reload</li>
-  <li>Built-in APIs (Camera, Media, Sensors, Notifications)</li>
-  <li>Ideal for academic & prototype projects</li>
+  <li><b>Minimal setup:</b> Start coding quickly without installing native tools.</li>
+  <li><b>Preconfigured Metro bundler:</b> Automatically compiles and runs your app.</li>
+  <li><b>Fast refresh & hot reload:</b> See changes instantly as you code.</li>
+  <li><b>Built-in APIs:</b> Camera, media, sensors, notifications, and more without writing native code.</li>
+  <li><b>Perfect for learning or prototypes:</b> Ideal for academic projects or quick experiments.</li>
 </ul>
 
-<h4>Expo Architecture</h4>
-<img src="https://raw.githubusercontent.com/shamodhas-ijse-teaching/file-hosting/main/images/expo_architecture.png"
-     alt="Expo Architecture"
-     style="width:70%; display:block; margin:auto; border:1px solid #ccc; padding:10px;" />
+<!-- Expo images side by side -->
+<div style="display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap;">
+  <div style="flex:1; min-width:300px; text-align:center;">
+    <img src="https://raw.githubusercontent.com/shamodhas-ijse-teaching/file-hosting/main/images/expo_architecture.png"
+         alt="Expo Architecture"
+         style="width:100%; max-width:600px; border:1px solid #ccc; padding:10px; box-shadow:0 4px 8px rgba(0,0,0,0.1);">
+    <br>
+    <b>Figure: Expo Architecture Overview</b>
+  </div>
+  <div style="flex:1; min-width:300px; text-align:center;">
+    <img src="https://raw.githubusercontent.com/shamodhas-ijse-teaching/file-hosting/main/images/expo_real_world_example.png"
+         alt="Expo Real World Example"
+         style="width:100%; max-width:600px; border:1px solid #ccc; padding:10px; box-shadow:0 4px 8px rgba(0,0,0,0.1);">
+    <br>
+    <b>Figure: Real-World Example of an Expo App</b>
+  </div>
+</div>
 
-<h4>Expo Real-World Example</h4>
-<img src="https://raw.githubusercontent.com/shamodhas-ijse-teaching/file-hosting/main/images/expo_real_world_example.png"
-     alt="Expo Real World Example"
-     style="width:70%; display:block; margin:auto; border:1px solid #ccc; padding:10px;" />
+<p><b>Key Differences Between React Native CLI and Expo:</b></p>
+<table cellpadding="6" cellspacing="0" 
+       style="width:100%; border-collapse: collapse;">
+  <tr>
+    <th>Feature</th>
+    <th>React Native CLI</th>
+    <th>Expo</th>
+  </tr>
+  <tr>
+    <td>Setup</td>
+    <td>Manual setup of Android Studio & Xcode</td>
+    <td>Minimal setup, preconfigured environment</td>
+  </tr>
+  <tr>
+    <td>Native Modules</td>
+    <td>Full access, can write custom native code</td>
+    <td>Limited to built-in APIs; eject required for custom native modules</td>
+  </tr>
+  <tr>
+    <td>Best Use Case</td>
+    <td>Large, complex apps with high performance needs</td>
+    <td>Learning, prototypes, small to medium apps</td>
+  </tr>
+  <tr>
+    <td>Ease of Use</td>
+    <td>Requires knowledge of native languages</td>
+    <td>Beginner-friendly, no native knowledge required</td>
+  </tr>
+</table>
+
+<p><b>Summary:</b> React Native CLI is like having the full toolbox — some call it the <i>bare-bones approach</i>. You can build anything, but you need some experience. Expo is like a ready-made toolkit — easier to start with and great for learning or quick projects. Choose the approach based on your project needs and experience level.</p>
 
 <hr/>
 
 <h2>9. Navigation & Routing with Expo Router</h2>
+
+<p><b>Expo Router</b> is a file-based routing system for React Native, inspired by Next.js. It automatically generates routes based on the folder structure inside the <code>app/</code> directory. This approach simplifies navigation and keeps your project organized.</p>
+
 <ul>
   <li>File-based routing (similar to Next.js)</li>
-  <li>Routes defined inside <b>app/</b> folder</li>
-  <li>Supports nested and dynamic routes</li>
+  <li>Routes are automatically generated from the <b>app/</b> folder</li>
+  <li>Supports nested routes, dynamic routes, and route groups</li>
+  <li>Integrates seamlessly with Stack, Tab, and Drawer navigation</li>
 </ul>
 
-<h3>Basic Routes</h3>
-<table border="1" cellpadding="6">
-<tr><th>URL</th><th>File</th></tr>
-<tr><td>/</td><td>app/index.tsx</td></tr>
-<tr><td>/home</td><td>app/home.tsx</td></tr>
+<hr>
+<h3>9.1 Key Files in Expo Router</h3>
+<ul>
+  <li><b>app/index.tsx</b> – <b>Application entry point</b>. This file corresponds to the root route <code>/</code> of your app.</li>
+  <li><b>index.tsx</b> – Default route for a folder:
+    <ul>
+      <li><code>app/home/index.tsx</code> → <code>/home</code></li>
+      <li><code>app/test/index.tsx</code> → <code>/test</code></li>
+    </ul>
+  </li>
+  <li><b>_layout.tsx</b> – Layout file for a folder. Wraps all pages in that folder with shared UI (header, footer, navigation). Example:
+    <ul>
+      <li><code>app/(auth)/_layout.tsx</code> wraps login and register pages.</li>
+    </ul>
+  </li>
+  <li><b>[param].tsx</b> – Dynamic route file. The name in brackets becomes a URL parameter:
+    <ul>
+      <li><code>app/profile/[id].tsx</code> → /profile/123, /profile/456</li>
+    </ul>
+  </li>
+</ul>
+
+<hr>
+<h3>9.2 Basic Routes</h3>
+<p>Basic route mapping uses file names:</p>
+<table border="1" cellpadding="6" cellspacing="0" 
+       style="width:100%; border-collapse: collapse; table-layout: auto;">
+  <tr style="background-color:#f2f2f2;">
+    <th style="padding:8px;">URL</th>
+    <th style="padding:8px;">File</th>
+  </tr>
+  <tr>
+    <td style="padding:8px;">/</td>
+    <td style="padding:8px;">app/index.tsx</td>
+  </tr>
+  <tr>
+    <td style="padding:8px;">/home</td>
+    <td style="padding:8px;">app/home.tsx</td>
+  </tr>
+  <tr>
+    <td style="padding:8px;">/about</td>
+    <td style="padding:8px;">app/about.tsx</td>
+  </tr>
 </table>
 
-<h3>Dynamic Routes</h3>
-<pre>/[id].tsx</pre>
-
-<h3>Nested Routes</h3>
-<pre>
-app/test/index.tsx   → /test
-app/test/sample.tsx → /test/sample
+<hr>
+<h3>9.3 Dynamic Routes</h3>
+<p>Use square brackets <code>[]</code> for routes with variables:</p>
+<pre style="background-color:#f9f9f9; padding:10px; border-radius:5px;">
+app/[id].tsx   → /123, /profile, /product-45
 </pre>
 
-<h3>Route Groups</h3>
-<pre>app/(auth)/login.tsx → /login</pre>
+<p><b>Example:</b></p>
+<pre style="background-color:#f9f9f9; padding:10px; border-radius:5px;">
+import { Text } from 'react-native';
+import { useLocalSearchParams } from 'expo-router';
 
-<h3>Layout Files</h3>
+export default function Page() {
+  const params = useLocalSearchParams();
+  return &lt;Text&gt;Dynamic Page: {params.id}&lt;/Text&gt;;
+}
+</pre>
+
+<hr>
+<h3>9.4 Nested Routes</h3>
+<p>Nested folders define nested routes:</p>
+<pre style="background-color:#f9f9f9; padding:10px; border-radius:5px;">
+app/test/index.tsx         → /test
+app/test/sample.tsx        → /test/sample
+app/test/profile/[id].tsx  → /test/profile/123
+</pre>
+
+<hr>
+<h3>9.5 Route Groups</h3>
+<p>Use parentheses <code>()</code> to group routes logically without affecting URL paths:</p>
+<pre style="background-color:#f9f9f9; padding:10px; border-radius:5px;">
+app/(auth)/login.tsx     → /login
+app/(auth)/register.tsx  → /register
+</pre>
+
+<hr>
+<h3>9.6 Layout Files</h3>
+<p>Layouts wrap child pages with shared UI components:</p>
 <ul>
-  <li>Shared UI wrapper</li>
-  <li>Used for Stack / Tab navigation</li>
+  <li>File naming: <code>layout.tsx</code> or <code>_layout.tsx</code></li>
+  <li>Can be nested for nested routes</li>
+  <li>Reduces duplication and keeps UI consistent</li>
 </ul>
+<p><b>Example Layout:</b></p>
+<pre style="background-color:#f9f9f9; padding:10px; border-radius:5px;">
+app/(auth)/_layout.tsx
+export default function AuthLayout({ children }) {
+  return (
+    &lt;View style={{ flex:1, padding:20 }}&gt;
+      &lt;Header /&gt;
+      {children}
+    &lt;/View&gt;
+  );
+}
+</pre>
+
+<hr>
+<h3>9.7 Linking & Navigation</h3>
+<p>Navigate programmatically using the <code>useRouter</code> hook:</p>
+<pre style="background-color:#f9f9f9; padding:10px; border-radius:5px;">
+import { useRouter } from 'expo-router';
+const router = useRouter();
+
+router.push('/home');      // Navigate to /home
+router.replace('/login');  // Replace current route
+router.back();             // Go back
+</pre>
+
+<hr>
+<h3>9.8 Best Practices</h3>
+<ul>
+  <li>Use route groups to separate public/private pages</li>
+  <li>Keep layouts reusable to reduce duplication</li>
+  <li>Use dynamic routes for pages with parameters (profile, product pages)</li>
+  <li>Organize nested routes into folders for clarity and maintainability</li>
+</ul>
+
+<hr>
+<h3>9.9 Visual Overview</h3>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/shamodhas-ijse-teaching/file-hosting/main/images/expo_router_structure.png" 
+       alt="Expo Router Folder Structure" 
+       style="width:80%; max-width:1000px; border:1px solid #ccc; padding:10px; box-shadow:0 4px 8px rgba(0,0,0,0.1); border-radius:5px;">
+  <br>
+  <b>Figure: Example Folder Structure for Expo Router</b>
+</p>
+
+<hr>
+<h3>9.10 Summary</h3>
+<p>Expo Router simplifies navigation by mapping file/folder structures directly to routes. With <b>dynamic routes</b>, <b>nested routes</b>, <b>route groups</b>, and <b>layouts</b>, you can build scalable and maintainable navigation systems in React Native apps. Understanding key files like <code>index.tsx</code>, <code>_layout.tsx</code>, and <code>[param].tsx</code> is essential for effective routing.</p>
+
 
 <p><b>End of Day 1</b></p>
 
