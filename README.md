@@ -3,6 +3,17 @@
 
 ---
 
+# 🎯 Primary Goal
+
+While this course covers the fundamental theories of mobile architecture, **our primary practical goal is to master React Native Development using the Expo Framework.**
+
+By the end of this module, you will be proficient in:
+* **Building Cross-Platform Apps:** Creating single-codebase applications that run natively on both **Android** and **iOS**.
+* **Using Expo:** Leveraging the modern "batteries-included" workflow for rapid development, testing, and deployment.
+* **Modern Routing:** Implementing navigation using the latest file-based **Expo Router**.
+
+---
+
 # 📘 Day 1: Foundations of Mobile Development
 
 ## 1.1 Understanding Application Platforms
