@@ -2,6 +2,8 @@ import { View, Text } from "react-native"
 import React from "react"
 import { Slot } from "expo-router"
 import { SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context"
+import { LoaderProvider } from "@/context/LoaderContext"
+import { AuthProvider } from "@/context/AuthContext"
 
 // SafeAreaView from react-native is deprecated
 // react-native-safe-area-context is the recommended alternative
@@ -13,10 +15,14 @@ const RootLayout = () => {
   // / device safe area values (top, left, right, and bottom)
   console.log(insets)
   return (
-    <View className="flex-1" style={{ marginTop: insets.top }}>
-      {/* Slot renders the currently active screen */}
-      <Slot />
-    </View>
+    <LoaderProvider>
+      <AuthProvider>
+        <View className="flex-1" style={{ marginTop: insets.top }}>
+          {/* Slot renders the currently active screen */}
+          <Slot />
+        </View>
+      </AuthProvider>
+    </LoaderProvider>
     // <SafeAreaView className="flex-1">
     // {/* Slot renders the currently active screen */}
     // <Slot />
