@@ -137,3 +137,27 @@ export const getTaskCounts = async () => {
   const pendingCount = tasks.filter(task => !task.isComplete).length
   return { completedCount, pendingCount }
 }
+
+export const getAllTaskByStatus = async (isComplete: boolean) => {
+  const user = auth.currentUser
+  if (!user) throw new Error('User not authenticated.')
+
+  const q = query(
+    tasksCollection,
+    where('userId', '==', user.uid),
+    where('isComplete', '==', isComplete),
+    orderBy('createdAt', 'desc')
+  )
+
+  const snapshot = await getDocs(q)
+  return snapshot.docs.map(docSnap => {
+    const data = docSnap.data()
+    return {
+      id: docSnap.id,
+      title: data.title as string,
+      description: data.description as string,
+      isComplete: (data.isComplete as boolean) || false,
+      createdAt: data.createdAt as string
+    }
+  })
+}
